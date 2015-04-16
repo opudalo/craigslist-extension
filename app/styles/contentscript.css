@@ -1,0 +1,76 @@
+.content .star {
+  display: none;
+}
+
+.content .row {
+  position: relative;
+}
+
+.content .row[data-crglst-state=hate] time,
+.content .row[data-crglst-state=hate] a,
+.content .row[data-crglst-state=hate] .l2,
+.content .row[data-crglst-state=hate] .pl {
+  color: #ccc;
+}
+
+.content .row[data-crglst-state=hate] .i{
+  opacity: .1;
+}
+
+.content .row[data-crglst-state=hate] .i:hover{
+  opacity: 1;
+}
+
+body.grid .row[data-crglst-state=love] {
+  border: 1px solid rgb(67, 208, 67) !important;
+  box-shadow: none;
+}
+
+body.grid .row[data-crglst-state=hate]{
+  border: 1px solid rgb(253, 114, 96) !important;
+  box-shadow: none;
+}
+
+.crglst,
+.crglst-love, .crglst-hate {
+  float: left;
+}
+
+.crglst-love, .crglst-hate {
+  cursor: pointer;
+}
+
+
+.row[data-crglst-state=love] .crglst-love,
+.crglst-love:hover {
+  color: rgb(67, 208, 67);
+}
+
+.row[data-crglst-state=hate] .crglst-hate,
+.crglst-hate:hover {
+  color: rgb(253, 114, 96);
+}
+
+.crglst-huge {
+  display: inline-block;
+  padding: 5px 10px 5px 5px;
+  position: fixed;
+  right: 30px;
+  top: 40px;
+  z-index: 111;
+  color: rgb(253, 114, 96);
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid;
+  background: #fff;
+  line-height: 24px;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.crglst-huge:hover {
+  color: rgb(34, 34, 34);
+}

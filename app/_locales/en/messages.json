@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Craigslist ☝☟",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Craigslist extension to like☝ and dislike☟ items from search results",
+    "description": "The description of the application"
+  }
+}
